@@ -6,6 +6,6 @@
 -#    per_page:      number of items to fetch per page
 -#    remote:        data-remote
 - if current_page.first?
-  %li.prev.disabled= link_to raw(t 'views.pagination.bootstrap.previous'), '#'
+  %li.previous.disabled= link_to raw(t 'views.pagination.bootstrap.previous'), '#', class: 'fui-arrow-left'
 - else
-  %li.prev= link_to raw(t 'views.pagination.bootstrap.previous'), url, :rel => 'prev', :remote => remote
+  %li.previous= link_to raw(t 'views.pagination.bootstrap.previous'), url, :rel => 'prev', :remote => remote, class: 'fui-arrow-left'
